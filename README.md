@@ -26,7 +26,5 @@ O projeto segue o padrão **Page Objects** com separação de responsabilidades:
 
 ---
 *Projeto desenvolvido por Matheus Pereira Salvador para fins de portfólio profissional.*
-=======
-# qa-auth-identity-manager
-Comprehensive QA Test Suite for the website OrangeHRM. Includes Test Strategy, BDD Scenarios, Bug Reports, and Traceability Matrix.
->>>>>>> 2a9aec50a5662cf40df9792ab1dbe9b66f5f12f2
+
+

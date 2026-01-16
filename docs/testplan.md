@@ -93,7 +93,7 @@ Liste o que será testado (softwares, módulos, versões).
 * **Ambiente de QA**: https://www.orangehrm.com/
 * **Gestão de Bugs**: Jira (Fluxo: Open -> In Progress -> Ready for QA -> Done)
 * **Automação**: Cypress (JavaScript/TypeScript)
-* **API Testing**: Postman
+* **API Testing**: Cypress
 * **Performance**: K6
 * **Browser Principal**: Firefox
 * **Cross-Browser**: Google Chrome, Edge
@@ -109,10 +109,3 @@ Liste o que será testado (softwares, módulos, versões).
 4.  Relatório Sumário de Teste (Test Summary Report).
 
 ---
-
-## 9. Aprovação
-
-| Nome | Cargo | Data | Assinatura |
-| :--- | :--- | :--- | :--- |
-| [Nome] | Product Owner | - | - |
-| [Nome] | Tech Lead | - | - |

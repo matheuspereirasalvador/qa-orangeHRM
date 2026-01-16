@@ -18,9 +18,9 @@
 | :--- | :--- | :---: | :--- | :---: | :--- |
 | **RF-AUTH-01** | Autenticação de Usuário  | **A** | *TBD* | ✅ [Coberto](../cypress/e2e/features/auth/login.feature) |
 | **RF-AUTH-02** | Encerramento de Sessão | **M** | *TBD* | ✅ [Coberto](../cypress/e2e/features/auth/security_protection.feature)  |
-| **RF-AUTH-03** | Proteção contra Força Bruta| **A** | *TBD* | ✅ [Coberto](../cypress/e2e/features/auth/security_protection.feature)|
+| **RF-AUTH-03** | Proteção contra Força Bruta| **A** | *TBD* | ✅ [Coberto](../cypress/e2e/features/auth/security_protection.feature)| BUG-001 |
 | **RF-AUTH-04** | Controle de Acesso (RBAC) | **A** | *TBD* | ✅ [Coberto](../cypress/e2e/features/auth/admin_user_management.feature) |
-| **RN-AUTH-01** | Regra: Política de Bloqueio | **A** | *TBD* | ✅ [Coberto](../cypress/e2e/features/auth/security_protection.feature) |
+| **RN-AUTH-01** | Regra: Política de Bloqueio | **A** | *TBD* | ✅ [Coberto](../cypress/e2e/features/auth/security_protection.feature) | BUG-001 |
 | **RN-AUTH-02** | Regra: Política de Senha | **A** | *TBD* | ✅ [Coberto](../cypress/e2e/features/auth/admin_user_management.feature)|
 | **RN-AUTH-03** | Regra: Saneamento de Input | **A** | *TBD* |✅ [Coberto](../cypress/e2e/features/auth/login.feature)|
 | **RN-AUTH-04** | Regra: Unicidade de Usuário | **A** | *TBD* | ✅ [Coberto](../cypress/e2e/features/auth/admin_user_management.feature)|

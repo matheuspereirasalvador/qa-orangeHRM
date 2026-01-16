@@ -34,7 +34,7 @@ Liste o que será testado (softwares, módulos, versões).
 * **Leave (Licenças)**: Definição de regras (Entitlements), Solicitação, Aprovação/Rejeição, Accruals.
 * **Time**: Timesheets, Attendance (Punch in/out), Relatórios de horas.
 * **Recruitment**: Criação de Vagas, Pipeline de Candidatos, Hiring.
-* **Performance & Segurança**: Testes básicos de carga e vulnerabilidades comuns (OWASP Top 10 superficial).
+* **Performance**: Testes básicos de carga.
 * **API**: Endpoints principais utilizados pelo front-end.
 
 ### 3.2 O Que NÃO Será Testado (Out-of-Scope)
@@ -59,7 +59,7 @@ Liste o que será testado (softwares, módulos, versões).
 
 ### 4.3 Dados de Teste
 * Não utilizaremos dados de produção (LGPD/GDPR).
-* Massa de dados será gerada via script (Python/SQL) para popular: 50 funcionários, 3 níveis hierárquicos, histórico de licenças.
+* Massa de dados será gerada via IA.
 
 ### 4.4 Critérios de Entrada (Entry Criteria)
 * Ambiente de QA disponível e estável.

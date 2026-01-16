@@ -1,0 +1,27 @@
+trigger:
+- main
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+- task: NodeTool@0
+  inputs:
+    versionSpec: '18.x'
+  displayName: 'Install Node.js'
+
+- script: |
+    npm ci
+  displayName: 'Install Dependencies'
+
+- script: |
+    npx cypress run --browser chrome --headless
+  displayName: 'Run Cypress E2E Tests'
+  continueOnError: true 
+
+- task: PublishPipelineArtifact@1
+  condition: failed()
+  inputs:
+    targetPath: '$(System.DefaultWorkingDirectory)/cypress/screenshots'
+    artifact: 'CypressScreenshots'
+    publishLocation: 'pipeline'

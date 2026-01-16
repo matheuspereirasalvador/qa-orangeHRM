@@ -3,7 +3,7 @@
 **Versão:** 2.1 (Consolidada)
 **Data:** 10/01/2026
 **Status:** Aprovado para QA
-**Autores:** Matheus (QA Lead) & PO Team
+**Autores:** Matheus (QA Lead) & Gemini (PO) 
 
 ---
 
@@ -47,7 +47,7 @@ Garantir a integridade dos dados dos colaboradores, segurança contra acessos in
 | :--- | :--- | :--- |
 | **REQ-PIM-01** | Cadastro de Funcionário | O sistema deve permitir cadastrar novos funcionários com dados básicos e criação opcional de login. |
 | **REQ-PIM-02** | Upload de Foto | O sistema deve permitir upload de foto de perfil com validação de segurança estrita. |
-| **REQ-PIM-03** | Exclusão de Funcionário | O sistema deve permitir a remoção completa de um funcionário. |
+| **REQ-PIM-03** | Exclusão de Funcionário via UI (Delete) | O sistema deve permitir a remoção de um funcionário via interface (validação por UI; sem suposições sobre limpeza em banco). |
 
 ### 3.2 Regras de Negócio (RN)
 * **RN-PIM-01 (Unicidade de ID):** O `EmployeeID` deve ser único. O sistema deve impedir duplicidade na criação.
@@ -56,7 +56,7 @@ Garantir a integridade dos dados dos colaboradores, segurança contra acessos in
     * **Allowlist:** Apenas `.jpg`, `.jpeg`, `.png`.
     * **Blocklist:** Rejeitar imediatamente `.exe`, `.sh`, `.php`, `.bat`, mesmo se renomeados.
     * **Tamanho:** Máximo 1MB.
-* **RN-PIM-03 (Deleção em Cascata - Hard Delete):** A exclusão de um funcionário deve remover fisicamente todos os registros dependentes (Leave Requests, Timesheets, Reviews) para evitar orfandade de dados no banco.
+* **RN-PIM-03 (Remoção via UI — Delete):** A exclusão de um funcionário via interface deve remover o registro do funcionário de forma visível na UI (não deve aparecer mais em buscas ou listagens). Os testes de aceitação devem validar a remoção na interface; **não se assume** que registros dependentes são fisicamente removidos do banco, já que o escopo de teste é a UI e não o acesso direto ao banco de dados.
 
 ---
 

@@ -1,0 +1,30 @@
+name: Cypress E2E Tests
+
+on: 
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  cypress-run:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Cypress run
+        uses: cypress-io/github-action@v6
+        with:
+          browser: chrome
+        continue-on-error: true
+      
+      - name: Upload Artifacts
+        uses: actions/upload-artifact@v4
+        if: always() 
+        with:
+          name: cypress-evidence
+          path: |
+            cypress/screenshots
+            cypress/videos
+          retention-days: 5

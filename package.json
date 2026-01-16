@@ -1,0 +1,32 @@
+{
+  "name": "qa-orangehrm",
+  "version": "1.0.0",
+  "description": "<<<<<<< HEAD # 🍊 OrangeHRM - Quality Assurance Automation Project",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs",
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matheuspereirasalvador/qa-orangeHRM.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/matheuspereirasalvador/qa-orangeHRM/issues"
+  },
+  "homepage": "https://github.com/matheuspereirasalvador/qa-orangeHRM#readme",
+  "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^24.0.0",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.8",
+    "cypress": "^15.8.2",
+    "esbuild": "^0.27.2",
+    "typescript": "^5.9.3"
+  }
+}

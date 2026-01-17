@@ -33,7 +33,7 @@ Antes da execução dos testes, foi realizado um planejamento estruturado para g
 * 📄 **[Software Requirements Specification (SRS)](docs/SRS.md):** Documento detalhado contendo o levantamento dos requisitos funcionais e regras de negócio mapeadas.
 * 🔗 **[Requirements Traceability Matrix (RTM)](docs/RTM.md):** Matriz de rastreabilidade que liga cada requisito aos seus respectivos cenários de teste, garantindo cobertura total.
 * PLAN **[Plano de Teste (Test Plan)](docs/test_plan.md):** Estratégia completa definindo escopo, ferramentas, riscos e cronograma da bateria de testes.
-* 🐞 **[Relatório de Bugs (Bug Reports)](docs/bug_report.md):** Documentação técnica dos defeitos encontrados durante a execução (incluindo steps to reproduce, evidências e severidade).
+* 🐞 **[Relatório de Bugs (Bug Reports)](/docs/reports/bug_report.md):** Documentação técnica dos defeitos encontrados durante a execução (incluindo steps to reproduce, evidências e severidade).
 
 ---
 
